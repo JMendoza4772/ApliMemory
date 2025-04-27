@@ -1,0 +1,99 @@
+
+body {
+
+    background-color: #FFFFE0; /* Color azul pálido */
+}
+
+.Title {
+    font-family: "BodyFont";
+}
+
+.card {
+    width: 15vw; 
+    height: 15vw; 
+    max-width: 70px; 
+    max-height: 70px; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dde0e4; 
+    border: 2px solid #f8f9fa;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.active {
+    background-color: #00BFFF; 
+}
+
+.completed {
+    background-color: #00BFFF; 
+}
+
+.wrong {
+    background-color: #FF4500; 
+}
+
+.disabled {
+    pointer-events: none; /* Desactivar clics */
+    opacity: 0.5; /* Cambiar opacidad para indicar desactivación */
+}
+.btn-Start{
+    font-family: "BodyFont";
+}
+#start-button {
+    background-color: #28a745; /* Color verde */
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+#start-button:hover {
+    background-color: #0056b3; /* Color de botón al pasar el mouse */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+#restart-button {
+    background-color: #28a745; /* Color verde */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #218838; /* Color verde más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+    font-family: "BodyFont";
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para la alineación */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+#score, #high-score {
+    background-color: #ffffff;
+    padding: 8px; /* Reducir padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.2rem; /* Reducir tamaño de fuente */
+    flex: 1; /* Permitir que los elementos tomen espacio igual */
+    margin: 0 10px; /* Espaciado entre los contenedores */
+    font-family: "BodyFont";
+}
+
+footer {
+    background-color: black; /* Fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    padding: 2rem 0; /* Espaciado en el footer */
+    width: 100%; /* Ancho completo */
+    font-family: "BodyFont";
+}

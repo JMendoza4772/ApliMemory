@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApliMemory</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/fonts.css">
+    <link href="static/css/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div>
+        <h1 class="text-3xl font-bold mb-4 Title text-center bg-black text-white p-4">ApliMemory</h1>
+    </div>
+    <div class="flex flex-col items-center my-4">
+        <div class="score-container">
+            <div id="score" class="text-2xl">Score: 0</div>
+            <div id="high-score" class="text-2xl text-green-600 font-bold">Mejor puntaje: 0</div>
+        </div>
+        <div id="game-grid" class="grid grid-cols-6 gap-2  mx-4"></div>
+        <button id="start-button" class="btn-Start mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Iniciar Juego</button>
+        <button id="restart-button" class="btn-Start mt-4 px-4 py-2 bg-green-500 text-white rounded hidden hover:bg-green-600">Volver a jugar</button>
+        <div id="message" class="mt-2 text-lg"></div>
+    
+        <!-- Elementos de audio -->
+        <audio id="correct-sound" src="static/Sound/correct.mp3" preload="auto"></audio>
+        <audio id="wrong-sound" src="static/Sound/Error.mp3" preload="auto"></audio>
+        <audio id="select-sound" src="static/Sound/Select.mp3" preload="auto"></audio>
+    </div>
+
+    <footer class="bg-black text-white text-center p-6 mt-20">
+        <p>Para más juegos y actualizaciones, síguenos en nuestras redes sociales.</p>
+        <div class="flex justify-center space-x-6 mt-2">
+            <a href="https://facebook.com" target="_blank" class="hover:text-blue-500">
+                <i class="fab fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="hover:text-blue-300">
+                <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="hover:text-pink-500">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+        </div>
+        <h2 class="text-lg font-semibold my-4">Gracias por jugar ApliMemory!!!</h2>
+        <p class="mt-4 text-sm">&copy; 2025 ApliMemory. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="static/js/app.js"></script>
+    <script src="static/js/5aed495ad0.js" crossorigin="anonymous"></script>
+</body>
+</html>
